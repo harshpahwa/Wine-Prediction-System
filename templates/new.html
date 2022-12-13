@@ -1,0 +1,175 @@
+`</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/857/698/459/glass-background-wine-red-wallpaper-preview.jpg);
+
+            text-align: center;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        input[type="text"] {
+            background: transparent;
+            border: 1px solid white;
+            border-radius: 5px;
+            font-family: sans-serif;
+
+        }
+
+        h1 {
+            color: white;
+
+        }
+
+        #left {
+            height: 500px;
+            display: inline-block;
+            width: 500px;
+        }
+
+        #right {
+            height: 600px;
+            position: absolute;
+            display: inline-block;
+
+        }
+
+        #bottle {
+            height: 800px;
+            opacity: 1;
+
+        }
+
+        .form-row>label {
+            padding: .5em 1em .5em 0;
+            flex: 1;
+        }
+
+        .form-row>input {
+            flex: 2;
+        }
+
+        .wrapper {
+            opacity: 1;
+            font-size: large;
+            border-radius: 5px;
+            list-style-type: none;
+            padding: 0;
+            color: white;
+            border-radius: 3px;
+
+        }
+
+        .form-row {
+            padding: 12px 0px;
+            display: flex;
+            text-align: left;
+        }
+
+        .form-row>label {
+            padding: 7 px;
+        }
+
+        .form-row>input,
+        .form-row>button {
+            padding: .5em;
+        }   
+
+        .form-row>button {
+            background: white;
+            color: black;
+            border: 1px solid black;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+        button{
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .form-row>input{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div id="leftcontainer">
+            
+            <div id="right">
+                <form action="/predict  method="post">
+                    <ul class="wrapper">
+                        <h1> Wine Quality Prediction </h1>
+                        <li class="form-row">
+                            <label for="fixed-acidity"> Fixed Acidity
+                            </label>
+                            <input type="text" name="fixed-acidity" placeholder=" fixed acidity "
+                                id="fixed-acidity"><br>
+                        </li>
+                        <li class="form-row">
+                            <label for="volatile-acidity">Volatile Acidity
+                            </label>
+                            <input type="text" name="volatile-acidity" placeholder="volatile acidity "
+                                id="volatile-acidity"><br>
+                        </li>
+                        <li class="form-row">
+                            <label for="residual sugar"> Residual Sugar
+                            </label>
+                            <input type="text" name="residual sugar" placeholder="residual sugar"
+                                id="residual sugar"><br>
+                        </li>
+                        <li class="form-row">
+                            <label for="Chlorides"> Chlorides
+                            </label>
+                            <input type="text" name="Chlorides" placeholder="Chlorides " id="Chlorides"><br>
+                        </li>
+                        <li class="form-row">
+                            <label for="free sulphur dioxide"> Free Sulphur Dioxide
+                            </label>
+                            <input type="text" name="free sulphur dioxide" placeholder="free sulphur dioxide "
+                                id="free sulphur dioxide"><br>
+                        </li>
+                        <li class="form-row">
+                            <label for="total sulphur dioxide"> Total Sulphur Dioxide
+                            </label>
+                            <input type="text" name="total sulphur dioxide"
+                                placeholder="total sulphur dioxide " id="total sulphur dioxide"><br>
+                        </li>
+                       
+                        <li class="form-row">
+                            <label for="Sulphates"> Sulphates
+                            </label>
+                            <input type="text" name="Sulphates" placeholder="Sulphates " id="Sulphates"><br>
+                        </li>
+                        
+                        <li class="form-row">
+                            <button type="submit"> Predict Quality</button>
+                        </li>
+
+                       <p> {{pred}}</p>
+
+                    </ul>
+                </form>
+            </div>
+
+
+        </div>
+</body>
+
+</html>

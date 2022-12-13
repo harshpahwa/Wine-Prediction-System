@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      background-image: url(https://c4.wallpaperflare.com/wallpaper/857/698/459/glass-background-wine-red-wallpaper-preview.jpg);
+
+      /* background-color: yellow; */
+      text-align: center;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* .flex-container{
+    left: 200px;
+} */
+    input[type="text"] {
+      background: transparent;
+      border: 1px solid white;
+      border-radius: 5px;
+      font-family: sans-serif;
+      
+    }
+
+    h1 {
+      color: white;
+
+    }
+
+    #left {
+      height: 500px;
+      display: inline-block;
+      width: 500px;
+    }
+
+    #right {
+      /* left: 600px; */
+      height: 600px;
+      top: 500px;
+      display: inline-block;
+
+    }
+
+    #bottle {
+      height: 800px;
+      opacity: 1;
+
+    }
+
+    .form-row>label {
+      padding: .5em 1em .5em 0;
+      flex: 1;
+    }
+
+    .form-row>input {
+      flex: 2;
+    }
+
+    .wrapper {
+      /* background-color: ; */
+      opacity: 1;
+      font-size: large;
+      /* background-image: url(w3.jpg); */
+      border-radius: 5px;
+      list-style-type: none;
+      padding: 0;
+      color: white;
+      border-radius: 3px;
+
+    }
+
+    .form-row {
+      padding: 12px 0px;
+      display: flex;
+      text-align: left;
+    }
+
+    .form-row>label {
+      padding: 7  px;
+    }
+
+    .form-row>input,
+    .form-row>button {
+      padding: .5em;
+    }
+
+    .form-row>button {
+      background: gray;
+      color: white;
+      border: 0;
+    }
+    h1{
+      font-size: 3em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex-container">
+    <div id="leftcontainer">
+      <div id="left">
+
+        <!-- <img src="./wine.jpg" alt="" id="bottle"> -->
+      </div>
+      <div id="right">
+        <form action="" method="post">
+          <ul class="wrapper">
+            <h1> Wine Quality Prediction </h1>
+            <li class="form-row">
+              <label for="fixed-acidity"> fixed-acidity
+              </label>
+              <input type="text" placeholder=" fixed acidity " id="fixed-acidity"><br>
+            </li>
+            <li class="form-row">
+              <label for="volatile-acidity">volatile-acidity
+              </label>
+              <input type="text" placeholder="volatile acidity " id="volatile-acidity"><br>
+            </li>
+            <li class="form-row">
+              <label for="citric acid">citric acid
+              </label>
+              <input type="text" placeholder="citric acid " id="citric acid"><br>
+            </li>
+            <li class="form-row">
+              <label for="residual sugar"> residual sugar
+              </label>
+              <input type="text" placeholder="residual sugar" id="residual sugar"><br>
+            </li>
+            <li class="form-row">
+              <label for="Chlorides"> Chlorides
+              </label>
+              <input type="text" placeholder="Chlorides " id="Chlorides"><br>
+            </li>
+            <li class="form-row">
+              <label for="free sulphur dioxide"> free sulphur dioxide
+              </label>
+              <input type="text" placeholder="free sulphur dioxide " id="free sulphur dioxide"><br>
+            </li>
+            <li class="form-row">
+              <label for="free sulphur dioxide"> total sulphur dioxide
+              </label>
+              <input type="text" placeholder="total sulphur dioxide " id="total sulphur dioxide"><br>
+            </li>
+           
+            <li class="form-row">
+              <label for="density"> density
+              </label>
+              <input type="text" placeholder="density " id="density"><br>
+            </li>
+            <li class="form-row">
+              <label for="pH">pH
+              </label>
+              <input type="text" placeholder="pH " id="pH"><br>
+            </li>
+            <li class="form-row">
+              <label for="Sulphates"> Sulphates
+              </label>
+              <input type="text" placeholder="Sulphates " id="Sulphates"><br>
+            </li>
+            <li class="form-row">
+              <label for="alcohol"> alcohol
+              </label>
+              <input type="text" placeholder="alcohol " id="alcohol"><br>
+            </li>
+            <li><button>Predict Probability</button></li>
+            
+            
+            <p>Wine is Good </p>
+          </ul>
+        </form>
+      </div>
+
+
+    </div>
+</body>
+
+</html>
